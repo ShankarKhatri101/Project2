@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#slideMenu {
+  position:fixed;
+  right: -100%;
+  height: 100%;
+  width: 20%;
+  z-index: 999;
+  background-color: #000;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
+}
+#offBtn{
+  padding: 7%;
+  margin: 0%;
+  font-size:larger;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.slideMenuTag{
+  color: aliceblue;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  padding: 1vw;
+}
+p {
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 1.8vw;
+  padding: 1vw;
+}
+a {
+  text-decoration: none;
+  color: #111;
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+#intro {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  padding: 0.1vw;
+  overflow-y: hidden;
+}
+#intro h1 {
+  font-size: 6vw;
+  font-weight: 600;
+  line-height: 5vw;
+  padding: 20px;
+}
+#place {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+#place h3,
+h4 {
+  font-weight: 600;
+}
+#heroImgDiv {
+  overflow-y: hidden;
+  height: 90%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgb(217, 22, 22), #480711);
+}
+#heroImg {
+  height: 100%;
+}
+
+#nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  margin: 0.1vw 0%;
+  z-index: 10;
+}
+#nav h3 {
+  background-color: #111;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-size: 1vw;
+  margin: 5px;
+  min-width: 40px;
+  user-select: none;
+}
+#about {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+  overflow-y: hidden;
+}
+#about h2 {
+  width: 40%;
+  font-size: 2.5vw;
+  font-weight: 300;
+  line-height: 6vw;
+  margin: 20px;
+}
+#aboutRight {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  padding: 0 0.5vw;
+  border-left: 2px solid;
+  overflow-y: hidden;
+}
+#aboutPart2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+#modleImgDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+  padding: 2%;
+}
+#modleImgDiv > img {
+  border-radius: 20px;
+  height: 100%;
+  width: 90%;
+}
+
+#icons {
+  display: flex;
+  margin: 0.1vw;
+}
+#icons i {
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin: 0.5vw;
+}
+
+#work {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 1vw 1vw 0;
+  border-top: 2px solid;
+  overflow-y: hidden;
+}
+#work i {
+  font-size: 30px;
+  margin: 10px;
+}
+#leftWork > h1 {
+  width: 100%;
+  font-size: 0.1vw;
+}
+#leftWork {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  /* background-color: #b02296; */
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid;
+}
+#leftWorkTop {
+  height: 30%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#model2ImgDiv {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+#model {
+  border-radius: 10px;
+  height: 100%;
+  width: 70%;
+}
+#rightWork {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding: 1vw 0 0 1vw;
+}
+#rightWorkUp {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+}
+#wRuL {
+  height: 100%;
+  width: 50%;
+}
+#wRuR {
+  height: 100%;
+  width: 50%;
+  border-left: 2px solid;
+  padding: 0vw 2vw;
+}
+#rightWorkDown {
+  display: flex;
+  padding: 10px;
+  height: 50%;
+  width: 100%;
+  border-top: 2px solid;
+}
+#wRdL {
+  height: 100%;
+  width: 50%;
+}
+#wRdR {
+  height: 100%;
+  width: 50%;
+  border-left: 2px solid;
+  padding: 0vw 2vw;
+}
+/*<Project section>*/
+footer {
+  height: 120%;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+#projects {
+  height: 70%;
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#projects > a{
+  padding: 2.2vw;
+
+  transition: all 1s ease;
+}
+
+#projects h2 {
+  width: 100%;
+  height: 8%;
+  font-size: 1000;
+  border-bottom: 2px solid;
+  padding-left: 40px;
+}
+#modelWeb {
+  height: 50%;
+  width: 50%;
+
+  display: flex;
+}
+#modelWeb img {
+  opacity: 0;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+#modelWeb:hover img {
+  display: flex;
+  opacity: 1;
+}
+#todoWeb {
+  height: 50%;
+  width: 50%;
+  display: flex;
+}
+#todoWeb img {
+  opacity: 0;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+#todoWeb:hover img {
+  rotate: -10deg;
+  opacity: 1;
+}
+#calculatorWeb {
+  height: 50%;
+  width: 50%;
+  display: flex;
+}
+#calculatorWeb img {
+  height: 85%;
+  border-radius: 50%;
+  rotate: 10deg;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#calculatorWeb:hover img {
+  rotate: 0deg;
+  opacity: 1;
+}
+#pokidexWeb {
+  height: 50%;
+  width: 50%;
+  display: flex;
+}
+#pokidexWeb img {
+  height: 85%;
+  border-radius: 50%;
+  rotate: 10deg;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#pokidexWeb:hover img {
+  rotate: 0deg;
+  opacity: 1;
+}
+footer > section > a:hover {
+  scale: 1.1;
+}
+/*</Project section>*/
+#Contact {
+  height: 30%;
+  width: 100%;
+  color: whitesmoke;
+  background-color: #000000;
+  display: flex;
+  flex-grow: 1;
+}

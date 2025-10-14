@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+}
+
+#container {
+  display: flex;
+  flex-direction: column; /* vertical stack */
+  gap: 20px;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  background: white;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.input-section {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+#inputBox {
+  flex: 1;
+  height: 40px;
+  padding: 0 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#inputBox:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+#fetchBtn {
+  height: 40px;
+  width: 100px;
+  background-color: #ff2600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#fetchBtn:hover {
+  background-color: #e02100;
+  transform: scale(1.05);
+}
+
+#fetchBtn:active {
+  transform: scale(0.95);
+}
+
+#pokimonImg {
+  display: none;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border-radius: 15px;
+  background: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+#pokimonImg.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
